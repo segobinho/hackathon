@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="LoginImage">
+        <div class="login-container">
+            <form id="loginForm" onsubmit="handleSubmit(event)">
+                <div class="login-box">
+                    <input type="text" class="loginInput" placeholder="Usuário" name="email" onchange="handleInput(event)" />
+                    <span id="emailError"></span>
+                    
+                    <label class="senha"></label>
+                    <input type="password" class="loginInput" placeholder="Senha" name="password" onchange="handleInput(event)" />
+                    <span id="passwordError"></span>
+
+                    <button type="submit" class="login-button">Log in</button>
+                </div>
+            </form> 
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function handleInput(event) {
+            
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault(); 
+
+            window.location.href = './paginas/home.html'; 
+        }
+    </script>A
+</body>
+</html>
