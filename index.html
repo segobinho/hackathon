@@ -3,25 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce Saudavel - Home</title>
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div id="sidebar-container"></div>
+    <div class="LoginImage">
+        <div class="login-container">
+            <form id="loginForm" onsubmit="handleSubmit(event)">
+                <div class="login-box">
+                    <input type="text" class="loginInput" placeholder="Usuário" name="email" onchange="handleInput(event)" />
+                    <span id="emailError"></span>
+                    
+                    <label class="senha"></label>
+                    <input type="password" class="loginInput" placeholder="Senha" name="password" onchange="handleInput(event)" />
+                    <span id="passwordError"></span>
 
-    <div class="main-content">
-        <div class="page">
-            <h1>Home</h1>
-            <h3>Página inicial. Alocar gráficos de tais informativos:</h3>
-            <ul>
-                <li>SKU's sem anúncios (por marketplace);</li>
-                <li>Vendas por SKU;</li>
-                <li>Estoque por SKU.</li>
-            </ul>
+                    <button type="submit" class="login-button">Log in</button>
+                </div>
+            </form> 
         </div>
     </div>
 
-    <script src="javascript/load-sidebar.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function handleInput(event) {
+            
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault(); 
+
+            window.location.href = './paginas/home.html'; 
+        }
+    </script>A
 </body>
 </html>
