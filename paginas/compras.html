@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Estoque</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="pedidos.css">
+</head>
+<body>
+    <div id="sidebar-container"></div>
+
+    <div class="container">
+        <div class="header">
+            <div class="header-item">
+                <i class="bx bx-slider"></i>
+                <span>FORNECEDORES</span>
+            </div>
+            <div class="header-item">
+                <i class="bx bx-sort-alt-2"></i>
+                <span>DIAS PARA ACABAR</span>
+            </div>
+            <div class="header-item">
+                <i class="bx bx-calendar"></i>
+                <span>TEMPO DE ANÁLISE</span>
+            </div>
+        </div>
+
+        <div class="content">
+            <table id="productTable">
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><img src="https://picsum.photos/220" alt="Produto 1" class="product-image"></td>
+                    <td><strong>PARTE APARELHO MECANICO/CILINDRO DA BOMBA 10L (PIONEIRO)</strong></td>
+                    <td>
+                        <span>10 DIAS PARA ACABAR</span><br>
+                        <span>15 VENDAS NO PERÍODO</span><br>
+                        <span>PEDIR 10 UNIDADES</span>
+                    </td>
+                    <td><i class="bx bx-line-chart"></i></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><img src="https://picsum.photos/201" alt="Produto 2" class="product-image"></td>
+                    <td><strong>PINTURA ESPECIAL PARA METAL 1L</strong></td>
+                    <td>
+                        <span>5 DIAS PARA ACABAR</span><br>
+                        <span>20 VENDAS NO PERÍODO</span><br>
+                        <span>PEDIR 15 UNIDADES</span>
+                    </td>
+                    <td><i class="bx bx-line-chart"></i></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><img src="https://picsum.photos/230" alt="Produto 3" class="product-image"></td>
+                    <td><strong>PEÇAS DE REPOSIÇÃO PARA MÁQUINA 5L</strong></td>
+                    <td>
+                        <span>7 DIAS PARA ACABAR</span><br>
+                        <span>10 VENDAS NO PERÍODO</span><br>
+                        <span>PEDIR 5 UNIDADES</span>
+                    </td>
+                    <td><i class="bx bx-line-chart"></i></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><img src="https://picsum.photos/202" alt="Produto 4" class="product-image"></td>
+                    <td><strong>ÓLEO LUBRIFICANTE 500ML</strong></td>
+                    <td>
+                        <span>3 DIAS PARA ACABAR</span><br>
+                        <span>25 VENDAS NO PERÍODO</span><br>
+                        <span>PEDIR 20 UNIDADES</span>
+                    </td>
+                    <td><i class="bx bx-line-chart"></i></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><img src="https://picsum.photos/203" alt="Produto 5" class="product-image"></td>
+                    <td><strong>FERRAMENTAS MANUAIS VARIADAS</strong></td>
+                    <td>
+                        <span>12 DIAS PARA ACABAR</span><br>
+                        <span>5 VENDAS NO PERÍODO</span><br>
+                        <span>PEDIR 8 UNIDADES</span>
+                    </td>
+                    <td><i class="bx bx-line-chart"></i></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><img src="https://picsum.photos/204" alt="Produto 6" class="product-image"></td>
+                    <td><strong>CREME ANTI-FERRUGEM 250ML</strong></td>
+                    <td>
+                        <span>6 DIAS PARA ACABAR</span><br>
+                        <span>18 VENDAS NO PERÍODO</span><br>
+                        <span>PEDIR 12 UNIDADES</span>
+                    </td>
+                    <td><i class="bx bx-line-chart"></i></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><img src="https://picsum.photos/200" alt="Produto 7" class="product-image"></td>
+                    <td><strong>DESENGRIPANTE SPRAY 400ML</strong></td>
+                    <td>
+                        <span>4 DIAS PARA ACABAR</span><br>
+                        <span>30 VENDAS NO PERÍODO</span><br>
+                        <span>PEDIR 25 UNIDADES</span>
+                    </td>
+                    <td><i class="bx bx-line-chart"></i></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><img src="https://picsum.photos/200" alt="Produto 8" class="product-image"></td>
+                    <td><strong>REPARO RÁPIDO PARA PLÁSTICO</strong></td>
+                    <td>
+                        <span>8 DIAS PARA ACABAR</span><br>
+                        <span>12 VENDAS NO PERÍODO</span><br>
+                        <span>PEDIR 5 UNIDADES</span>
+                    </td>
+                    <td><i class="bx bx-line-chart"></i></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><img src="https://picsum.photos/200" alt="Produto 9" class="product-image"></td>
+                    <td><strong>COLA SUPER FORTE 50G</strong></td>
+                    <td>
+                        <span>15 DIAS PARA ACABAR</span><br>
+                        <span>22 VENDAS NO PERÍODO</span><br>
+                        <span>PEDIR 10 UNIDADES</span>
+                    </td>
+                    <td><i class="bx bx-line-chart"></i></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><img src="https://picsum.photos/200" alt="Produto 10" class="product-image"></td>
+                    <td><strong>FITA ADESIVA TRANSPARENTE 50M</strong></td>
+                    <td>
+                        <span>2 DIAS PARA ACABAR</span><br>
+                        <span>50 VENDAS NO PERÍODO</span><br>
+                        <span>PEDIR 30 UNIDADES</span>
+                    </td>
+                    <td><i class="bx bx-line-chart"></i></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="footer">
+            <button class="add-button" id="addButton">
+                <i class="bx bx-plus"></i> Incluir pedido
+            </button>
+        </div>
+
+    </div>
+
+    <script src="../javascript/load-sidebar.js"></script>
+
+    <script>
+        
+        const productTable = document.getElementById('productTable');
+        const daysHeaderIcon = document.querySelector('.header-item:nth-child(2) i'); 
+        let ascending = true; 
+
+        function extractDaysRemaining(text) {
+            const match = text.match(/(\d+)\sDIAS\sPARA\sACABAR/);
+            return match ? parseInt(match[1]) : Infinity; 
+        }
+
+        function sortTable() {
+            const rows = Array.from(productTable.rows).slice(); 
+            rows.sort((rowA, rowB) => {
+                const daysA = extractDaysRemaining(rowA.cells[3].innerText);
+                const daysB = extractDaysRemaining(rowB.cells[3].innerText);
+                return ascending ? daysA - daysB : daysB - daysA;
+            });
+            rows.forEach(row => productTable.appendChild(row));
+        }
+
+        daysHeaderIcon.addEventListener('click', () => {
+            ascending = !ascending; 
+            sortTable();
+        });
+
+        window.onload = () => {
+            sortTable(); 
+        };
+
+        document.getElementById('addButton').addEventListener('click', () => {
+            const selectedProducts = [];
+            const rows = productTable.rows;
+
+            for (let i = 0; i < rows.length; i++) {
+                const checkbox = rows[i].cells[0].querySelector('input[type="checkbox"]');
+                if (checkbox.checked) {
+                    const productName = rows[i].cells[2].innerText;
+                    const quantityText = rows[i].cells[3].innerText.match(/PEDIR\s(\d+)\sUNIDADES/);
+                    const quantity = quantityText ? quantityText[1] : 0;
+                    selectedProducts.push({ name: productName, quantity });
+                }
+            }
+
+            if (selectedProducts.length > 0) {
+                const csvContent = "data:text/csv;charset=utf-8," 
+                    + "Nome do Produto,Quantidade\n" 
+                    + selectedProducts.map(e => `${e.name},${e.quantity}`).join("\n");
+
+                const encodedUri = encodeURI(csvContent);
+                const link = document.createElement("a");
+                link.setAttribute("href", encodedUri);
+                link.setAttribute("download", "pedidos.csv");
+                document.body.appendChild(link); 
+
+                link.click(); 
+                document.body.removeChild(link);
+            } else {
+                alert('Nenhum produto selecionado!');
+            }
+        });
+    </script>
+    </script>
+</body>
+</html>

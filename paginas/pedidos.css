@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Estrutura geral */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-item {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+}
+
+.header-item i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+table td {
+    padding: 15px;
+    vertical-align: top;
+}
+
+table td img {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-image {
+    border: 1px solid #ddd;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.add-button {
+    display: flex;
+    align-items: center;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-button i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.add-button:hover {
+    background-color: #218838;
+}
